@@ -1,0 +1,184 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W10 Command Prompt Color Generator</title>
+  <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="static/css/material.min.css">
+  <link rel="stylesheet" href="static/webfont/NotoSansKR.css">
+  <link rel="stylesheet" href="static/webfont/material-icon.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <!-- Open Graph -->
+  <meta property="og:description" content="Generate Windows 10 Command Prompt color code with ease!">
+  <meta property="og:image" content="https://wizwix.github.io/w10cmdcolor/static/image/favicon.png">
+  <meta property="og:site_name" content="W10 Command Prompt Color Generator">
+  <meta property="og:title" content="W10 Command Prompt Color Generator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wizwix.github.io/w10cmdcolor">
+</head>
+
+<body class="body">
+  <!-- Scripts -->
+  <script type="text/javascript" src="static/js/material.min.js"></script>
+  <script type="text/javascript" src="static/js/main.js"></script>
+  <!-- Body -->
+  <div class="content">
+    <h1 id="main-title">Windows 10 Command Prompt<br>Color Code Generator</h1>
+    <div id="explanation">
+      <img src="static/image/example.png">
+      <p>In Windows 10, you can style texts with ASCII Escape Character. This website will make code for Command Prompt.<br>Use this with <code>echo</code></p>
+    </div>
+    <hr>
+    <div id="generator">
+      <div>
+        <p>You can select multiple attributes. It will work both ways.</p>
+      </div>
+      <div id="selections">
+        <div id="sel-style">
+          <p id="sel-text">Style</p>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-st-reset">
+            <input type="checkbox" id="g-st-reset" class="mdl-checkbox__input" name="g-st" value="st-reset">
+            <span class="mdl-checkbox__label">Reset</span>
+          </label><br>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-st-bold">
+            <input type="checkbox" id="g-st-bold" class="mdl-checkbox__input" name="g-st" value="st-bold">
+            <span class="mdl-checkbox__label" style="font-weight: bold">Bold</span>
+          </label><br>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-st-underline">
+            <input type="checkbox" id="g-st-underline" class="mdl-checkbox__input" name="g-st" value="st-underline">
+            <span class="mdl-checkbox__label" style="text-decoration: underline;">Underline</span>
+          </label><br>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-st-inverse">
+            <input type="checkbox" id="g-st-inverse" class="mdl-checkbox__input" name="g-st" value="st-inverse">
+            <span class="mdl-checkbox__label" style="background-color:#101010;color:#EFEFEF">Inverse</span>
+          </label>
+          <br><br>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-st-reset-after">
+            <input type="checkbox" id="g-st-reset-after" class="mdl-checkbox__input" name="g-st" value="st-reset-after">
+            <span class="mdl-checkbox__label">Reset after code</span>
+          </label>
+          <br><br>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-st-prepend">
+              <input type="checkbox" id="g-st-prepend" class="mdl-checkbox__input" name="g-st" value="st-prepend">
+              <span class="mdl-checkbox__label">Prepend 'echo'</span>
+            </label>
+        </div>
+        <div id="sel-foreground">
+          <p id="sel-text">Foreground&nbsp;Color</p>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-fg-bold">
+            <input type="checkbox" id="g-fg-bold" class="mdl-checkbox__input" name="g-fg" value="fg-bold">
+            <span class="mdl-checkbox__label" style="font-weight: bold;">Bold</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-none">
+            <input type="radio" id="g-fg-none" class="mdl-radio__button" name="g-fg" value="fg-none" checked>
+            <span class="mdl-radio__label">None</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-black">
+            <input type="radio" id="g-fg-black" class="mdl-radio__button" name="g-fg" value="fg-black">
+            <span class="mdl-radio__label">Black/Grey</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-red">
+            <input type="radio" id="g-fg-red" class="mdl-radio__button" name="g-fg" value="fg-red">
+            <span class="mdl-radio__label">Red</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-green">
+            <input type="radio" id="g-fg-green" class="mdl-radio__button" name="g-fg" value="fg-green">
+            <span class="mdl-radio__label">Green</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-yellow">
+            <input type="radio" id="g-fg-yellow" class="mdl-radio__button" name="g-fg" value="fg-yellow">
+            <span class="mdl-radio__label">Yellow</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-blue">
+            <input type="radio" id="g-fg-blue" class="mdl-radio__button" name="g-fg" value="fg-blue">
+            <span class="mdl-radio__label">Blue</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-magenta">
+            <input type="radio" id="g-fg-magenta" class="mdl-radio__button" name="g-fg" value="fg-magenta">
+            <span class="mdl-radio__label">Magenta</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-cyan">
+            <input type="radio" id="g-fg-cyan" class="mdl-radio__button" name="g-fg" value="fg-cyan">
+            <span class="mdl-radio__label">Cyan</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-fg-white">
+            <input type="radio" id="g-fg-white" class="mdl-radio__button" name="g-fg" value="fg-white">
+            <span class="mdl-radio__label">White</span></label><br>
+        </div>
+        <div id="sel-background">
+          <p id="sel-text">Background&nbsp;Color</p>
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="g-bg-bold">
+            <input type="checkbox" id="g-bg-bold" class="mdl-checkbox__input" name="g-bg" value="bg-bold">
+            <span class="mdl-checkbox__label" style="font-weight: bold;">Bold</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-none">
+            <input type="radio" id="g-bg-none" class="mdl-radio__button" name="g-bg" value="bg-none" checked>
+            <span class="mdl-radio__label">None</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-black">
+            <input type="radio" id="g-bg-black" class="mdl-radio__button" name="g-bg" value="bg-black">
+            <span class="mdl-radio__label">Black</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-red">
+            <input type="radio" id="g-bg-red" class="mdl-radio__button" name="g-bg" value="bg-red">
+            <span class="mdl-radio__label">Red</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-green">
+            <input type="radio" id="g-bg-green" class="mdl-radio__button" name="g-bg" value="bg-green">
+            <span class="mdl-radio__label">Green</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-yellow">
+            <input type="radio" id="g-bg-yellow" class="mdl-radio__button" name="g-bg" value="bg-yellow">
+            <span class="mdl-radio__label">Yellow</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-blue">
+            <input type="radio" id="g-bg-blue" class="mdl-radio__button" name="g-bg" value="bg-blue">
+            <span class="mdl-radio__label">Blue</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-magenta">
+            <input type="radio" id="g-bg-magenta" class="mdl-radio__button" name="g-bg" value="bg-magenta">
+            <span class="mdl-radio__label">Magenta</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-cyan">
+            <input type="radio" id="g-bg-cyan" class="mdl-radio__button" name="g-bg" value="bg-cyan">
+            <span class="mdl-radio__label">Cyan</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="g-bg-white">
+            <input type="radio" id="g-bg-white" class="mdl-radio__button" name="g-bg" value="bg-white">
+            <span class="mdl-radio__label">White</span>
+          </label><br>
+        </div>
+      </div>
+      <div id="input">
+        <div id="input-textarea" class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="ipText">
+          <label class="mdl-textfield__label" for="ipText" id="lbText">Text to display</label>
+        </div>
+        <div id="input-buttons">
+          <button onclick="cdGenerate();" id="btGenerate" class="site-buttons mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Generate</button>
+          <div class="mdl-tooltip" data-mdl-for="btGenerate">Generate code</div>
+          <button onclick="cdClean();" id="btClean" class="site-buttons mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Clean</button>
+          <div class="mdl-tooltip" data-mdl-for="btClean">Clear your selection</div>
+        </div>
+      </div>
+      <div id="result">
+        <div id="result-textarea" class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="ipResult" readonly>
+          <label class="mdl-textfield__label" for="ipResult" id="lbResult">RESULT</label>
+          <div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" data-mdl-for="ipResult">Do not copy this string!<br>Use 'COPY' button instead!</div>
+        </div>
+        <div id="result-buttons">
+          <button onclick="cdCopy();" id="btCopy" class="site-buttons mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Copy</button>
+          <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="btCopy">Copy code to your clipboard</div>
+          <button onclick="cdClear();" id="btClear" class="site-buttons mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Clear</button>
+          <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="btClear">Clear generated code</div>
+        </div>
+      </div>
+      <div id="hide" style="display: none"></div>
+    </div>
+  </div>
+</body>
+
+</html>

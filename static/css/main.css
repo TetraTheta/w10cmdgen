@@ -1,0 +1,138 @@
+/* General Style */
+
+html {
+  font-family: 'NotoSansKR', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #EFEFEF;
+}
+
+.body {
+  margin: 0 auto;
+  float: none !important;
+}
+
+@media (max-width: 1500px) {
+  .body {
+    margin: 0 10px;
+  }
+}
+
+a:visited {
+  color: blue;
+  /* I don't like visited link changed to purple */
+}
+
+
+/* Title */
+
+#main-title {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.05em;
+}
+
+.content h1 {
+  font-size: 3em;
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 390px) {
+  .content h1 {
+    font-size: 1.8em;
+  }
+}
+
+
+/* Body Common */
+
+.content {
+  font-size: 1em;
+  text-align: center !important;
+}
+
+img {
+  max-width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+
+/* Body Generator */
+
+#generator {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+/* Body Selections */
+
+#selections,
+#input {
+  display: flex;
+  flex-direction: row;
+}
+
+#sel-style,
+#sel-foreground,
+#sel-background {
+  text-align: left;
+  flex-direction: column;
+  margin: 0 50px;
+  flex-basis: 30%;
+}
+
+#sel-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+#input {
+  display: inline-flex;
+  justify-content: center;
+}
+
+#input-textarea {
+  margin: 30px;
+}
+
+#input-buttons {
+  margin: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+
+input#ipText {
+  font-family: 'NotoSansKR', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  display: inline-block;
+}
+
+
+/* Body Result */
+
+#result {
+  margin: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result-textarea.mdl-textfield {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.site-buttons {
+  margin: 0 1em;
+}
